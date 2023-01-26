@@ -1,116 +1,146 @@
-.container {
-  padding: 0 2rem;
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 10px;
+  padding: 10px 0px;
+  font-size: 20px;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(231, 209, 118, 0.7),
+      rgba(40, 180, 133, 0.5)
+    ),
+    url("../public/images/hero-image.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
+  font-family: "Baloo Da 2", cursive;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.heroContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+
+.heroHeading {
+  font-size: 4rem;
+  margin: 1rem 0;
+  letter-spacing: 0.3rem;
+}
+
+.heroSubheading {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.btnSecondary {
+  background-color: #d61c4e;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.contentBlock {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.contentTitle {
+  padding: 1rem;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.2rem;
+}
+
+.contentSubtitle {
+  margin: 2rem 1rem;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.featureBox {
+  padding: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1.5rem 2.5rem rgb(0 0 0 / 15%);
+  transition: all 0.1s;
+  width: 35vmin;
+}
+
+.blockSecondary {
+  background-color: #e7d176;
+}
+
+.featureBox span,
+.contentSubtitle span {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #e7d176, #28b485);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.featureTitle {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.profile {
+  display: flex;
+}
+
+.profileImage {
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #141414;
+}
+
+.bio {
+  font-size: 0.6em;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.qoute {
+  font-size: 0.7em;
+  line-height: 1.5;
+  border-top: 1px solid #000;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: left;
 }
