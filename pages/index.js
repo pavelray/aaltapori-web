@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import { Fragment } from "react";
 import Gallary from "../components/business/Gallary/Gallary";
@@ -8,6 +9,17 @@ import { WEB_LINK } from "../utils/constants";
 export default function Home() {
   return (
     <Fragment>
+      <Head>
+        <title>Aaltapori | Cozy Homestay in the Heart of Jayanti </title>
+        <meta
+          name="description"
+          content="Experience the comfort of a home away from home at our charming homestay located in the heart of Jayanti, West Bengal. Enjoy modern amenities, personalized service, and easy access to popular attractions. Book now!"
+        />
+        <meta
+          name="keywords"
+          content="Homestay, Jayanti, Vacation rental, Comfortable, Personalized service, Modern amenities, Popular attractions"
+        />
+      </Head>
       <div className={styles.hero}>
         <div className={styles.nav}>
           <div className={styles.logo}>
@@ -34,11 +46,19 @@ export default function Home() {
         </div>
       </div>
       <div className={[styles.contentBlock].join(" ")}>
-        <div className={[styles.contentSubtitle,styles.textUpperCase].join(" ")}>Our Rooms</div>
+        <div
+          className={[styles.contentSubtitle, styles.textUpperCase].join(" ")}
+        >
+          Our Rooms
+        </div>
         <Gallary />
       </div>
       <div className={[styles.contentBlock, styles.blockSecondary].join(" ")}>
-        <div className={[styles.contentSubtitle, styles.textUpperCase].join(" ")}>Our Services</div>
+        <div
+          className={[styles.contentSubtitle, styles.textUpperCase].join(" ")}
+        >
+          Our Services
+        </div>
         <div className={styles.features}>
           <div className={styles.featureBox}>
             <span className="material-symbols-outlined">local_parking</span>
@@ -75,7 +95,9 @@ export default function Home() {
         </div>
       </div>
       <div className={[styles.contentBlock].join(" ")}>
-        <div className={[styles.contentSubtitle,styles.textUpperCase].join(" ")}>
+        <div
+          className={[styles.contentSubtitle, styles.textUpperCase].join(" ")}
+        >
           We can&apos;t wait to see you. <br />
           <p className={styles.subheading}>
             Nightly rates from &#8377;1900 per night.
@@ -105,7 +127,9 @@ export default function Home() {
         </div>
       </div>
       <div className={[styles.contentBlock, styles.blockSecondary].join(" ")}>
-        <div className={[styles.contentSubtitle, styles.textUpperCase].join(" ")}>
+        <div
+          className={[styles.contentSubtitle, styles.textUpperCase].join(" ")}
+        >
           What our guest says about us
         </div>
         <div className={styles.features}>
@@ -172,9 +196,9 @@ export default function Home() {
             <div className={styles.qoute}>
               <p>
                 One of the best homestay i have ever stayed. Excellent
-                hospitality with homely atmosphere. It&apos;s a perfect example of a
-                homestay. Highly recommend. Mr Pradip Dey and his family....
-                They are really admirable.
+                hospitality with homely atmosphere. It&apos;s a perfect example
+                of a homestay. Highly recommend. Mr Pradip Dey and his
+                family.... They are really admirable.
               </p>
             </div>
           </div>
