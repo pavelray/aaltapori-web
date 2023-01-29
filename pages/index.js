@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Fragment } from "react";
 import Gallary from "../components/business/Gallary/Gallary";
 import Button from "../components/ui/button/Button";
-import ScrollDown from "../components/ui/ScrollDown/ScrollDown";
 import styles from "../styles/Home.module.css";
 import { WEB_LINK } from "../utils/constants";
 
@@ -173,7 +172,7 @@ export default function Home() {
             <div className={styles.qoute}>
               <p>
                 One of the best homestay i have ever stayed. Excellent
-                hospitality with homely atmosphere. It's a perfect example of a
+                hospitality with homely atmosphere. It&apos;s a perfect example of a
                 homestay. Highly recommend. Mr Pradip Dey and his family....
                 They are really admirable.
               </p>
