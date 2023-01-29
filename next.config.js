@@ -2,13 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        pathname: '**',
-      },
-    ],
+    formats: ['image/webp', 'image/avif'],
+    domains: ['firebasestorage.googleapis.com','images.unsplash.com','lh3.googleusercontent.com'],
   },
 }
 

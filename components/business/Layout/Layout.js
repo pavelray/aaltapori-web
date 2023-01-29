@@ -10,7 +10,11 @@ const Layout = ({ children }) => {
         <meta name="viewport" content="width=device-width" />
       </Head>
       <main className={styles.container}>{children}</main>
-      <footer></footer>
+      <footer className={styles.footerWrapper}>
+        <div>
+          Copywrite@Aaltapori {new Date().getFullYear()}
+        </div>
+      </footer>
     </Fragment>
   );
 };

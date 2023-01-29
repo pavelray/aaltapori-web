@@ -1,0 +1,18 @@
+.mediaImage {
+  position: relative;
+  width: 45vmin;
+  height: 25vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+.mediaContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    column-gap: 10vmin;
+    row-gap: 4vmin;
+    margin-top: 2rem;
+}
