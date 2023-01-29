@@ -120,7 +120,7 @@
   align-items: center;
 }
 
-.textUpperCase{
+.textUpperCase {
   text-transform: uppercase;
 }
 
@@ -167,4 +167,187 @@
 
 .marginTopMax {
   margin-top: 3rem;
+}
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .heroContent {
+    text-align: center;
+  }
+  .features {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .featureBox {
+    width: 100%;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .heroContent {
+    text-align: center;
+  }
+  .features {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .featureBox {
+    width: 100%;
+  }
+  .heroHeading {
+    font-size: 2.5rem;
+  }
+  .heroSubheading {
+    font-size: 1.5rem;
+  }
+  .contentTitle {
+    font-size: 2rem;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0rem;
+  }
+  .contentSubtitle {
+    font-size: 1.5rem;
+  }
+  .contentBlock {
+    padding: 3rem 1rem;
+  }
+  .inputBox {
+    width: 100%;
+  }
+  .featureTitle{
+    font-size: 1.2rem;
+  }
+  .featureDesc{
+    font-size: 1rem;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  .heroContent {
+    text-align: center;
+  }
+  .features {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .featureBox {
+    width: 100%;
+  }
+  .heroHeading {
+    font-size: 2.5rem;
+  }
+  .heroSubheading {
+    font-size: 1.5rem;
+  }
+  .contentTitle {
+    font-size: 2rem;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0rem;
+  }
+  .contentSubtitle {
+    font-size: 1.5rem;
+  }
+  .contentBlock {
+    padding: 3rem 1rem;
+  }
+  .inputBox {
+    width: 100%;
+  }
+  .featureTitle{
+    font-size: 1.2rem;
+  }
+  .featureDesc{
+    font-size: 1rem;
+  }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .heroContent {
+    text-align: center;
+  }
+  .features {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .featureBox {
+    width: 100%;
+  }
+  .heroHeading {
+    font-size: 2.5rem;
+  }
+  .heroSubheading {
+    font-size: 1.5rem;
+  }
+  .contentTitle {
+    font-size: 2rem;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0rem;
+  }
+  .contentSubtitle {
+    font-size: 1.5rem;
+  }
+  .contentBlock {
+    padding: 3rem 1rem;
+  }
+  .inputBox {
+    width: 100%;
+  }
+  .featureTitle{
+    font-size: 1.2rem;
+  }
+  .featureDesc{
+    font-size: 1rem;
+  }
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .heroContent {
+    text-align: center;
+  }
+  .features {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .featureBox {
+    width: 100%;
+  }
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .heroContent {
+    text-align: center;
+  }
+  .features {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .featureBox {
+    width: 100%;
+  }
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+  .heroContent {
+    text-align: center;
+  }
+  .features {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .featureBox {
+    width: 100%;
+  }
 }
